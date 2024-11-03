@@ -1,7 +1,6 @@
 package com.microservice.pagamento.repository;
 
 import com.microservice.pagamento.model.Pagamento;
-<<<<<<< HEAD
 import com.microservice.pagamento.model.StatusPagamento;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -17,11 +16,4 @@ public interface PagamentoRepository extends JpaRepository<Pagamento, Long> {
     List<Pagamento> findByStatus(StatusPagamento status);
     
     boolean existsByPedidoId(Long pedidoId);
-=======
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface PagamentoRepository extends JpaRepository<Pagamento, Long> {
->>>>>>> f31beeb7fd84831ad96247f917a0da568559b9b7
 }
